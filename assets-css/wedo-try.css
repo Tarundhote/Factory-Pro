@@ -115,7 +115,7 @@
 }
 
 
-.image-side{
+/* .image-side{
   flex:1;
   min-width:320px;
   background-image:
@@ -124,29 +124,73 @@
   background-size:cover;
   background-position:center;
   position:relative;
-  margin-top:0;   /* fixed */
-}
+  margin-top:0;   
+} */
+
+ /*______circle btn_________________________________ */
+
+        .middle-side1{
+          display: flex;
+        }
+
+        .circle-button {
+            position: relative;
+            top: 0;
+            width: 120px;
+            height: 120px;
+            background-color: #ff9800; /* Orange background */
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            text-decoration: none;
+          margin-left: 45vw;
+           margin-top: -430px;
+        }
+
+        .circle-button:hover {
+            transform: scale(1.05) rotate(45deg);
+        }
+
+        /* Central Arrow Icon */
+        .arrow {
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            transform: rotate(-45deg); /* Arrow point direction */
+        }
+      
+
+        /* Rotating SVG Text */
+        .rotating-text {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            animation: rotateText 10s linear infinite;
+        }
+
+        @keyframes rotateText {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        text {
+            fill: white;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
 
 
 
-.badge{
-  position:absolute;
-  left:50%;
-  top:10%;
-  margin-top: -400px;
-  transform:translate(-50%,-50%);
-  width:100px;
-  height:100px;
-  background:#f39c12;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-
-.badge img{
-  width:100px;
-}
 
 /* _______________RESPONSIVE_______________ */
 
@@ -171,6 +215,9 @@
   .feature-card2{
     width:100%;
   }
+  .circle-button{
+   margin-top: -460px;
+}
 
 }
 
@@ -191,6 +238,9 @@
     height:400px;
     object-fit:cover;
   }
+  .circle-button{
+   margin-top: -460px;
+}
 
 }
 
@@ -218,6 +268,10 @@
   }
   .badge{
   margin-top: -398px;
+}
+
+.circle-button{
+   margin-top: -350px;
 }
 
 }
@@ -248,5 +302,11 @@
   .badge img{
     width:70px;
   }
+  .circle-button {
+        margin-top: -290px;
+        width: 100px;
+        height: 100px;
+        margin-left: 34vw;
+    }
 
 }
