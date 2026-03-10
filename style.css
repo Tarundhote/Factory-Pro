@@ -1,7 +1,7 @@
  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
 
         :root {
-            --primary-orange: #f97316;
+            --primary-orange: rgba(255, 153, 0, 1);
             --dark-blue: #0f172a;
             --text-gray: #64748b;
             --bg-light: #f8fafc;
@@ -64,16 +64,8 @@
             }
     }
 
-        .nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: relative;
-            top: 0;
-        }
-        /* header.scrolled .nav {
-            border-bottom: none !important;
-        } */
+        
+       
 
         .logo {
             display: flex;
@@ -86,12 +78,21 @@
         }
 
         .logo i { color: var(--primary-orange); }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            top: 0;
+        }
 
-        .nav-links {
+.nav-links {
             display: flex;
             list-style: none;
             align-items: center;
             gap: 25px;
+            margin: 0;
+            padding: 0;
         }
 
         .nav-links a {
@@ -99,19 +100,60 @@
             text-decoration: none;
             color: rgba(255, 255, 255, 1);
             font-size: 15px;
+            transition: color 0.3s ease;
         }
-        .nav-call{
+
+        .nav-links a:hover { 
+            color: rgba(255, 153, 0, 1); 
+        }
+
+        .nav-item.dropdown {
+            position: relative;
+        }
+
+       
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff;
+            list-style: none;
+            padding: 10px 0;
+            margin: 0;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1000;
+            border-radius: 4px;
+        }
+
+        
+        .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-item:hover .nav-item a {
+            color: rgba(255, 153, 0, 1);
+        }
+        
+        .dropdown-item {
+            color: #333 !important; 
+            padding: 10px 20px;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .dropdown-item:hover {
+            background-color: #f1f1f1;
+            color: var(--primary-orange) !important;
+        }
+
+        /* Icon and Contact Styling */
+        .nav-call {
             width: 22px;
             margin-right: 10px;
         }
-
-        .menu-btn {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-        .nav-links a:hover { color: var(--primary-orange); }
 
         .contact-info {
             display: flex;
@@ -120,16 +162,21 @@
             color: #fff;
             font-weight: 600;
         }
-            header.scrolled .nav {
-      border-bottom: none !important;
-    }
 
-        .contact-info i { color: var(--primary-orange); }
+        .contact-info i { 
+            color: var(--primary-orange); 
+        }
 
+        .menu-btn {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: white;
+        }
+        header.scrolled .nav {
+            border-bottom: none !important;
+        }
 
-
-        /* dropdown options services */
-        /* Dropdown Menu_________ */
 
 
         /* --- Hero Section __________________________________________________--- */
@@ -923,10 +970,11 @@
         top: 20px;
         right: 11px;
         background: #2a2828;
-        width: 147px;
+        width: 160px;
         padding: 10px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         align-items: flex-start;
+        
     }
 
     .nav-links.active {
@@ -983,8 +1031,9 @@
                 .about-info p {
                     position: relative;
                     /* top: -20px; */
-                    font-size: 15px;
-                    margin-bottom: 2px;
+                    font-size: 12px;
+                    margin-bottom: 10px;
+                    margin-top: 10px;
                 }
 
                 .tagline{
@@ -1140,7 +1189,7 @@
                 margin-left: -5%; 
             }
 
-            .img-bottom { left: 60px; }
+            .img-bottom { left: 185px; }
             .exp-badge {        
                  left: 20px;
                  top: -105px;
@@ -1176,11 +1225,11 @@
     }
 
     .ser-subheading {
-        font-size: 20px;
+        font-size: 26px;
     }
 
     .ser-subheading span {
-        font-size: 20px;
+        font-size: 26px;
     }
 
     .ser-para {

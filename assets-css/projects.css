@@ -8,6 +8,10 @@
   margin-top: 30%;
 } 
 
+.project-section .filter-container {
+    padding: 0px 0px 10px 0px;
+}
+
 
 .peoject-sec2{
   position: relative;
