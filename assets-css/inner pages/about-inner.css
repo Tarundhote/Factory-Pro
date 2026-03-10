@@ -1,6 +1,6 @@
 .inn-about-con{
   width: 100%;
-  background-image:linear-gradient(to right, rgba(8, 8, 8, 1), rgba(0,0,0,0.2)), url("/FactoryPro/assets/inner-about-bg.png");
+  background-image:linear-gradient(to right, rgba(8, 8, 8, 1), rgba(0,0,0,0.2)), url("../../assets/inner-about-bg.png");
   background-repeat: no-repeat;
   background-position:center;
   background-size: cover;
