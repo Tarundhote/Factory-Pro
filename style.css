@@ -865,6 +865,7 @@
 
         /* ================================== Responsive========================= --- */
  @media (max-width: 1200px) {
+    .nav-links { gap: 15px; }
             .about-wrapper { gap: 40px; }
             .about-images { transform: scale(0.9);  }
             .exp-badge { left: 320px; }
