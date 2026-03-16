@@ -946,7 +946,7 @@ height: 300px;}
         flex-direction: column;
         text-align:left;
         top: 25px;
-        margin-top: 359px;
+        margin-top: 250px;
     }
 
     .ser-heading-section {
@@ -1094,6 +1094,7 @@ height: 300px;}
                 padding: 40px 15px;
         margin-bottom: 80px;
         padding-top: 154px;
+        max-height: 70vh;
     }
 
     .ser-heading h3 {
@@ -1141,7 +1142,8 @@ height: 300px;}
     .story-sec1 {
         flex-direction: column;
         gap: 40px;
-        padding-top: 105px;
+        /* padding-top: 105px; */
+        margin-top: -80px;
         /* text-align: center; */
     }
     .sec1-subheading{
@@ -1159,6 +1161,7 @@ height: 300px;}
     }
     .sec1-img1 img{
             width: 200%;
+            height: 300px;
             border-radius: 30px;
         }
 
@@ -1177,7 +1180,7 @@ height: 300px;}
     .sec2-img img{
                 width: 233%;
        border-radius: 30px;
-       height: 250px;
+       height: 300px;
        position: relative;
         top: -55px;
     }
