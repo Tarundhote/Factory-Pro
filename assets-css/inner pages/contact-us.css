@@ -1,0 +1,295 @@
+.inner-contact{
+  margin: 100px auto;
+}
+
+
+
+.flex-con{
+  display: flex;
+  width: 100%;
+  margin: 100px auto;
+  background-color:rgb(249, 249, 239);
+  border-radius: 40px;
+  padding: 50px 20px;
+  gap: 20px;
+  height: auto;
+}
+
+.contact-img{
+  width: 50%;
+  height:fit-content ;
+  overflow: hidden;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.contact-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+  transition: transform 1s ease;
+
+}
+
+.contact-img img:hover{
+  transform: scale(1.2);
+  
+}
+
+.form-con{
+  width: 50%;
+}
+.contact-form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-input{
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: rgba(255,255,255,0.04);
+  color: rgba(34, 34, 34, 1);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-input::placeholder{
+  color: rgba(34, 34, 34, 1);
+}
+
+.form-input:focus{
+  border-color: #ff9900;
+  background: rgba(255,255,255,0.06);
+  box-shadow: 0 0 0 3px rgba(255,153,0,0.15);
+}
+
+
+.form-btn{
+  width: 100%;
+  display: inline-block;
+  padding: 14px 32px;
+  background: #ff9900;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-btn:hover{
+  background: #e68a00;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255,153,0,0.35);
+}
+
+
+.form-btn:active{
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+
+
+
+/* contact crds */
+.contact-card-con{
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+ 
+}
+
+.contact-card{
+  text-align:center;
+  background-color:rgb(249,249,239);
+  padding:50px;
+  transition: all 0.5s ease;
+  border-radius: 40px;
+  width:320px;
+}
+.contact-card:hover{
+  transform: scale(1.02);
+  background-color:rgb(228, 228, 218);
+}
+
+.call-icon{
+  width:70px;
+  height:70px;
+  cursor:pointer;
+  transition:transform 0.3s ease;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+
+.contact-card:hover .call-icon{
+  transform:scale(1.05);
+}
+
+.contact-card:hover .call-icon path{
+  animation:ring 1.5s infinite;
+}
+
+.contact-card:hover .call-icon path:nth-of-type(2){
+  animation-delay:0.2s;
+}
+
+.contact-card:hover .call-icon path:nth-of-type(3){
+  animation-delay:0.4s;
+}
+
+.contact-card:hover .call-icon path:nth-of-type(4){
+  animation-delay:0.6s;
+}
+
+@keyframes ring{
+0%{
+opacity:0.4;
+transform:scale(0.95);
+}
+50%{
+opacity:1;
+transform:scale(1.05);
+}
+100%{
+opacity:0.4;
+transform:scale(0.95);
+}
+}
+
+.contact-card h4{
+  color: rgb(255, 255, 255);
+  background-color: #ff9900;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: All 0.5s ease;
+}
+
+.contact-card h4 a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.contact-card:hover .contact-card h4{
+  transform: scale(1.02);
+}
+
+/* email__________________________________________ */
+
+/* email icon size */
+.email-icon{
+
+  width:70px;
+  height:70px;
+  cursor:pointer;
+  transition:transform 0.3s ease;
+  padding:10px;
+  margin-bottom:30px;
+}
+
+/* card hover par icon zoom */
+.contact-card:hover .email-icon{
+  transform:scale(1.05);
+}
+
+/* arrow animation (last two paths arrow hain) */
+.contact-card:hover .email-icon path:nth-last-child(-n+2){
+  animation:mailMove 1s infinite;
+}
+
+/* animation */
+@keyframes mailMove{
+
+0%{
+transform:translateY(0);
+opacity:0.6;
+}
+
+50%{
+transform:translateY(-4px);
+opacity:1;
+}
+
+100%{
+transform:translateY(0);
+opacity:0.6;
+}
+
+}
+
+
+/* location_______________________ */
+.location-icon{
+  width:80px;
+  height:80px;
+  cursor:pointer;
+  transition:transform 0.3s ease;
+  padding:10px;
+  margin-bottom:30px;
+}
+
+/* card hover zoom */
+.contact-card:hover .location-icon{
+  transform:scale(1.05);
+}
+
+/* pin animation */
+.contact-card:hover .location-icon{
+  animation:pinBounce 1s infinite;
+}
+
+@keyframes pinBounce{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-6px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+
+
+
+
+/* responsive */
+@media (max-width:768px) {
+
+  .flex-con{
+    flex-direction: column;
+        margin: -90px auto 20px;
+        background-color: transparent;
+  }
+  .contact-img{
+  width: 100%;
+  border-radius: 20px;
+}
+  .form-con{
+  width: 100%;
+}
+.contact-img img{
+  border-radius: 20px;
+}
+}

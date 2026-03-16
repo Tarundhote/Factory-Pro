@@ -36,20 +36,50 @@ function showTab(tabId, element) {
             }
 
           }
+// header
+const header = document.getElementById('header');
+    const burger = document.getElementById('burger');
+    const panel = document.getElementById('mobile-panel');
+    const toggles = document.querySelectorAll('.mobile-toggle');
 
+    // Sticky Effect
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('sticky');
+        } else {
+            header.classList.remove('sticky');
+        }
+    });
 
-          const menuBtn = document.querySelector(".menu-btn");
-const navLinks = document.querySelector(".nav-links");
+    // Mobile Toggle
+    burger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        burger.classList.toggle('active');
+        panel.classList.toggle('active');
+        document.body.style.overflow = panel.classList.contains('active') ? 'hidden' : '';
+    });
 
-menuBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-});
+    // Mobile Dropdown Accordion
+    toggles.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const parent = btn.parentElement;
+            parent.classList.toggle('open');
+            const icon = btn.querySelector('span');
+            icon.innerText = parent.classList.contains('open') ? "-" : "+";
+        });
+    });
 
-const header = document.querySelector("header");
+    // Close on Outside Click
+    document.addEventListener('click', (e) => {
+        if (!header.contains(e.target)) {
+            panel.classList.remove('active');
+            burger.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
 
-window.addEventListener("scroll", () => {
-  header.classList.toggle("sticky", window.scrollY > 50);
-});
+     
 
 
 // FSQ______________________

@@ -3,24 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our Projects</title>
+    <title>About Us</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./assets-css/wedo-try.css" />
+    <link rel="stylesheet" href="./assets-css/projects.css" />
     <link rel="stylesheet" href="./assets-css/process.css" />
     <link rel="stylesheet" href="./assets-css/footer.css" />
     <link rel="stylesheet" href="./assets-css/inner pages/about-inner.css">
-    <link rel="stylesheet" href="./assets-css/inner pages/blog-inner.css">
-    <link rel="stylesheet" href="./assets-css/inner pages/projects-inner.css">
     <link rel="stylesheet" href="./assets-css/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets-css/header.css">
+    <link rel="stylesheet" href="./assets-css/inner pages/contact-us.css">
   </head>
   <body>
     <!-- ____________header________ -->
-     <header id="header">
+ <header id="header">
     <div class="container header-con">
         <div class="logo">
             <div class="logo-box">
@@ -141,114 +141,131 @@
     </div>
 </header>
 
-    
-    <!-- _____blog page hero  ___________________-->
+    <!-- _____about page hero  ___________________-->
      <section class="inn-about-con ">
       <div class="container about-hero-con">
       <div class="inn-about-heading ">
-          <span class="title-light">Our Projects</span>
-          <!-- <span class="title-bold">Us</span> -->
+          <span class="title-light">Contact</span>
+          <span class="title-bold">Us</span>
           
       </div>
       <div class="inner-about-hero-bottom">
         <p class="badcrum-list">Home </p>
-        <ul class="badcrum-curr-item"><li>Projects</li></ul>
+        <ul class="badcrum-curr-item"><li>Contact</li></ul>
       </div>
       </div>
      </section>
 
+     <!-- about pages -->
+      <section class="inner-contact">
+        <div class="container sub-con-contact">
+          <div class=" flex-con">
+          <figure class="contact-img">
+              <img src="./assets/Image.png" alt="">
+               <!-- <figcaption class="image-contact">
+            <a href="tel:+91 123654789">+91 123654789</a>
+            <a href="mailto:info@domainname.com">info@domainname.com</a>
+          </figcaption> -->
+          </figure>
+         
+          <div class="form-con">
+              <form class="contact-form">
 
-     <main>
-     <!-- ______________projectss -->
- <section class="inner-project-con1 pb-5">
-       <nav class="filter-container">
-        <ul class="filter-list">
-            <li><button class="nav-btn active" data-filter="all">All</button></li>
-            <li class="separator">/</li>
-            <li><button class="nav-btn" data-filter="automation">Automation</button></li>
-            <li class="separator">/</li>
-            <li><button class="nav-btn" data-filter="development">Development</button></li>
-            <li class="separator">/</li>
-            <li><button class="nav-btn" data-filter="infrastructure">Infrastructure</button></li>
-            <li class="separator">/</li>
-            <li><button class="nav-btn" data-filter="manufacturing">Manufacturing</button></li>
-            <li class="separator">/</li>
-            <li>
-                <button class="nav-btn" data-filter="sustainability">
-                   Sustainability
-                </button>
-            </li>
-        </ul>
-    </nav>
+                  <input type="text" placeholder="Your Name" class="form-input">
+                  <input type="number" placeholder="Your Phone Number" class="form-input">
+                  <input type="email" placeholder="Your Email" class="form-input">
+                  <textarea placeholder="Message" class="form-input"></textarea>
+                  <button class="form-btn" type="submit">Send Message</button>
 
-    <main class="project-section container">
-        <div id="grid" class="project-grid">
-            
-            
-            <div class="project-card" data-cat="development">
-                <div class="img-wrapper">
-                    <img src="./assets/project-1.jpg.png" alt="Development">
-                    <div class="category-tag">Development</div>
-                </div>
-                <h3 class="project-title">Total Quality Management Implementation</h3>
-            </div>
+              </form>
+              </div>
+          </div>
+          <div class="contact-card-con">
+              <article class="contact-card">
+                <svg class="call-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="mask0_352_1454" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="30">
+                  <path d="M29.328 0.0351562H0.295776V29.0674H29.328V0.0351562Z" fill="white"/>
+                  </mask>
+                  <g mask="url(#mask0_352_1454)">
+                  <path d="M19.4412 28.3428C19.3206 28.3428 19.1992 28.3323 19.0786 28.3107C14.9273 27.5634 10.789 25.3005 7.42653 21.9379C4.06404 18.5755 1.8011 14.4372 1.05382 10.2858C0.913026 9.50235 1.24135 8.68752 1.89031 8.20985C2.72138 7.59824 3.61686 7.02965 4.55139 6.52092C5.171 6.18376 5.90146 6.16495 6.50681 6.4699C8.57623 7.51302 9.948 9.25041 10.5838 11.6336C10.7563 12.2786 10.6026 12.978 10.1731 13.5041L8.80196 15.1819C8.58222 15.451 8.55543 15.822 8.73555 16.1054C9.90203 17.9408 11.4237 19.4625 13.2591 20.6287C13.5422 20.8091 13.9132 20.782 14.1825 20.5625L15.8601 19.1917C16.3865 18.7619 17.0851 18.6085 17.7312 18.7807C20.1141 19.4168 21.8515 20.7886 22.8945 22.858C23.1999 23.4627 23.181 24.1935 22.8438 24.8131C22.3348 25.7476 21.7663 26.6431 21.1544 27.4742C20.7505 28.0231 20.1049 28.3428 19.4412 28.3428ZM5.5891 7.56689C5.45201 7.56689 5.31064 7.6028 5.17954 7.67433C4.29689 8.15485 3.45242 8.69095 2.66894 9.26751C2.42013 9.45077 2.29359 9.7591 2.3466 10.0533C3.04657 13.9436 5.18041 17.8344 8.35506 21.0094C11.5301 24.1841 15.4209 26.3179 19.3112 27.0179C19.6059 27.0706 19.9137 26.9441 20.0967 26.6956C20.6736 25.9121 21.2096 25.0676 21.6905 24.1849C21.8212 23.9444 21.8332 23.6693 21.722 23.4494C20.8423 21.7042 19.4261 20.5922 17.3923 20.0495C17.154 19.9863 16.8913 20.0452 16.6909 20.2089L15.0136 21.5794C14.3049 22.1586 13.3161 22.2219 12.5546 21.737C10.5555 20.4668 8.89772 18.8089 7.62717 16.8099C7.14266 16.0478 7.20593 15.0593 7.78505 14.3508L9.15593 12.6734C9.31923 12.4732 9.37881 12.2114 9.31497 11.9725C8.77232 9.93842 7.66023 8.52222 5.91543 7.64241C5.81511 7.59197 5.70367 7.56689 5.5891 7.56689Z" fill="#FF9900"/>
+                  <path d="M27.9348 15.2418C27.9254 15.2418 27.916 15.2415 27.9069 15.2412C27.5444 15.2261 27.263 14.9201 27.2781 14.5578C27.4184 11.2116 26.1453 7.93888 23.7855 5.57847C21.4253 3.21863 18.1594 1.93896 14.8061 2.08573C14.4572 2.09486 14.1377 1.81983 14.1227 1.45702C14.1076 1.09478 14.3888 0.78868 14.7511 0.773575C18.4638 0.616252 22.0945 2.03073 24.714 4.64992C27.3332 7.26911 28.7459 10.9006 28.5903 14.6128C28.5755 14.9656 28.2848 15.2418 27.9348 15.2418Z" fill="#FF9900"/>
+                  <path d="M24.4409 15.2411C24.4281 15.2411 24.415 15.2408 24.4019 15.2399C24.0397 15.2185 23.7635 14.9079 23.7849 14.5459C23.9273 12.1248 23.0285 9.75532 21.3181 8.04499C19.6078 6.33468 17.2368 5.43806 14.8172 5.57828C14.4532 5.60251 14.1446 5.32348 14.1232 4.96124C14.1018 4.59929 14.378 4.28864 14.7403 4.26726C17.5321 4.1011 20.2716 5.14108 22.2467 7.11644C24.2221 9.09182 25.2606 11.8278 25.0959 14.6229C25.0754 14.972 24.7861 15.2411 24.4409 15.2411Z" fill="#FF9900"/>
+                  <path d="M20.951 15.242C20.9305 15.242 20.9099 15.2411 20.8891 15.2391C20.5281 15.2055 20.2627 14.8855 20.2964 14.5243C20.4355 13.0332 19.9087 11.5712 18.8508 10.5132C17.7928 9.45554 16.3319 8.92828 14.8397 9.06765C14.4788 9.10042 14.1582 8.83594 14.1248 8.47484C14.0912 8.11373 14.3566 7.79367 14.7177 7.76004C16.601 7.58476 18.4444 8.24968 19.7793 9.58464C21.1146 10.9196 21.7796 12.7647 21.6039 14.6464C21.5724 14.9866 21.2862 15.242 20.951 15.242Z" fill="#FF9900"/>
+                  </g>
+                </svg>
 
-          
-            <div class="project-card" data-cat="automation">
-                <div class="img-wrapper">
-                    <img src="./assets/project-2.jpg.png" alt="Automation">
-                    <div class="category-tag">Automation</div>
-                </div>
-                <h3 class="project-title">Advanced Research In Material Science</h3>
-            </div>
+                <h4><a href="tel:+91 123654789">Call  </a></h4>
+                
+              </article>
+              <article class="contact-card">
+                <svg class="email-icon" width="150px" height="150px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 
-          
-            <div class="project-card" data-cat="infrastructure">
-                <div class="img-wrapper">
-                    <img src="./assets/project-3.jpg.png" alt="Infrastructure">
-                    <div class="category-tag">Infrastructure</div>
-                </div>
-                <h3 class="project-title">Smart Grid Systems Integration</h3>
-            </div>
+                    <path  d="M17 2C18.0609 2 19.0783 2.42136 19.8284 3.17151C20.5786 3.92165 21 4.93913 21 6V18C21 19.0609 20.5786 20.0782 19.8284 20.8284C19.0783 21.5785 18.0609 22 17 22H7C5.93913 22 4.92178 21.5785 4.17163 20.8284C3.42149 20.0782 3 19.0609 3 18V6C3 4.93913 3.42149 3.92165 4.17163 3.17151C4.92178 2.42136 5.93913 2 7 2"
+                    stroke="#FF9900"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"/>
 
-            <div class="project-card" data-cat="infrastructure">
-                <div class="img-wrapper">
-                    <img src="./assets/project-4.jpg.png" alt="Manufacturing">
-                    <div class="category-tag">Infrastructure</div>
-                </div>
-                <h3 class="project-title">Precision Component Assembly</h3>
-            </div>
+                    <path d="M21 13H19.85C19.2933 13.0008 18.7477 13.1564 18.2744 13.4496C17.8011 13.7428 17.4187 14.1618 17.17 14.6599L16.83 15.34C16.5813 15.8381 16.199 16.2572 15.7256 16.5504C15.2523 16.8436 14.7068 16.9992 14.15 17H9.85004C9.29329 16.9992 8.74772 16.8436 8.27441 16.5504C7.8011 16.2572 7.41873 15.8381 7.17004 15.34L6.83002 14.6599C6.58134 14.1618 6.19896 13.7428 5.72565 13.4496C5.25234 13.1564 4.70677 13.0008 4.15002 13H3"
+                    stroke="#FF9900"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"/>
 
-          
-            <div class="project-card" data-cat="manufacturing">
-                <div class="img-wrapper">
-                    <img src="./assets/Manufacturing-1.png" alt="Manufacturing">
-                    <div class="category-tag">Manufacturing</div>
-                </div>
-                <h3 class="project-title">Precision Component Assembly</h3>
-            </div>
+                    <path d="M11.9707 2V11"
+                    stroke="#FF9900"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"/>
 
-            <div class="project-card" data-cat="sustainability">
-                <div class="img-wrapper">
-                    <img src="./assets/Sustainability-2.png" alt="Manufacturing">
-                    <div class="category-tag">Sustainability</div>
-                </div>
-                <h3 class="project-title">Precision Component Assembly</h3>
-            </div>
+                    <path d="M15.5004 8L12.9905 10.58C12.8616 10.7155 12.7065 10.8235 12.5345 10.8972C12.3626 10.971 12.1775 11.0089 11.9905 11.0089C11.8034 11.0089 11.6183 10.971 11.4464 10.8972C11.2745 10.8235 11.1194 10.7155 10.9905 10.58L8.48047 8"
+                    stroke="#FF9900"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"/>
 
-           
+                    </svg>
 
+                <h4> <a href="mailto:info@domainname.com">Gmail </a></h4>
+                
+              </article>
+              <article class="contact-card">
+                <svg class="location-icon" width="150" height="150" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+
+<!-- Bottom Plate -->
+<path d="M200 720
+H824
+L760 840
+H264
+L200 720Z"
+fill="#FF9900"/>
+
+<!-- Location Pin -->
+<path d="M534.1 639.7
+C652.5 537.4 711.7 445.8 711.7 365
+C711.7 238 609 152.9 516.7 152.9
+C424.4 152.9 321.7 238 321.7 365
+C321.7 445.8 380.9 537.4 499.4 639.7
+C509.3 648.3 524.1 648.3 534.1 639.7Z"
+fill="#FF9900"/>
+
+<!-- Inner Circle -->
+<circle cx="516.7" cy="348" r="70" fill="#ffffff"/>
+
+</svg>
+
+                <h4><a href="https://www.google.com/maps/search/?api=1&query=520+West+Valley+Amin+and+Minim" target="_blank"> Location
+</a></h4>
+                
+              </article>
+          </div>
         </div>
-    </main>
-    </section>  
-    </main>
-      
+      </section>
 
 
-
-
+     
      <!-- _____footer_ -->
-    <footer>
+      <footer>
         <div class="container">
           <div class="footer-top">
             <div class="cta-content">
@@ -347,6 +364,5 @@
         </div>
       </footer> 
       <script src="./script.js"></script>
-      <script src="./js/project.js"></script>
-     
+     </main>
   </body>

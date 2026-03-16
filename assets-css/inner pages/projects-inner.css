@@ -1,5 +1,5 @@
     .filter-container{
-            padding: 120px 0px 10px 0px;
+                padding: 80px 0px 40px 0px;
         }
 
         .filter-list {
@@ -117,12 +117,23 @@
             .filter-list {
                 gap: 5px;
                        margin-left: -35px;
-        margin-top: -30px;
+        margin-top: 10px;
             }
             .nav-btn {
             font-size: 10px;
             }
             .project-title {
-    margin-top: 5px;
-    font-size: 14px;}
+    margin-top: 10px;
+    font-size: 15px;}
+    .inner-project-con .project-section {
+    margin: 30px 0px 50px;
+    padding: 0px;
+            margin-left: -5px;
+}
+
+.project-grid {gap: 20px};
+
+
+
+
         }
