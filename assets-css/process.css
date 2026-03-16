@@ -564,7 +564,8 @@
                 width: 100%;
         margin-top: 50px;
         }
-        
+        .project-section .project-sec1 {
+              margin-top: 410px;
         }
 
         @media (max-width: 1024px) {
@@ -758,6 +759,7 @@
               .pricing-list{
           display: grid;
           grid-template-columns: repeat(1, 1fr);
+          gap: 50px !important;
         }
             /*Blog  */
             .blog-container{
